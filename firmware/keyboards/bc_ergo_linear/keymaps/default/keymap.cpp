@@ -97,9 +97,9 @@ void setupKeymap() {
 
                           KC_F1,            KC_F2,  KC_F3,  KC_F4,       KC_F5,                                   KC_F6,       KC_F7,      KC_F8,  KC_F9,  KC_F10,          \
                           KC_NO,            KC_0,   KC_ENT, KC_1,        KC_EQL,       LAYER_1,      LAYER_1,     KC_ASTR,     KC_7,       KC_8,   KC_9,   KC_PLUS,         \
-            KC_NO,        KC_INS,           KC_LEFT,KC_UP,  KC_RGHT,     KC_MINS,                                 KC_BSLS,     KC_4,       KC_5,   KC_6,   KC_EQL, KC_BSPC, \
-            KC_NO,        KC_NO,            KC_DEL, KC_DOWN,KC_BSPC,     LCTL(KC_F2),                             KC_0,        KC_1,       KC_2,   KC_3,   KC_SLSH,KC_NO,   \
-            KC_NO,                                          KC_NO,       KC_NO,                                   KC_NO,       KC_NO,                              KC_NO    \
+            _______,      KC_INS,           KC_LEFT,KC_UP,  KC_RGHT,     KC_MINS,                                 KC_BSLS,     KC_4,       KC_5,   KC_6,   KC_EQL, KC_BSPC, \
+            _______,      KC_NO,            KC_DEL, KC_DOWN,KC_BSPC,     LCTL(KC_F2),                             KC_0,        KC_1,       KC_2,   KC_3,   KC_SLSH,KC_NO,   \
+            _______,                                        _______,     _______,                                 _______,     _______,                            _______  \
     );
 
     uint32_t layer2[MATRIX_ROWS][MATRIX_COLS] =
@@ -120,10 +120,10 @@ void setupKeymap() {
         //                              |      |      |      ||      |  LY2 |      |
         //                              `--------------------'`--------------------'
                           KC_F11,           KC_F12, KC_F3,  KC_NO,       KC_NO,                                   KC_NO,       KC_PGUP,    KC_PGDN,KC_PAUS,KC_PSCR,         \
-                          KC_GRV,           KC_LCBR,KC_RCBR,KC_PIPE,     KC_NO,        KC_NO,        KC_NO,       KC_ASTR,     KC_DEL,     KC_SLCK,KC_BSPC,KC_PLUS,         \
-            KC_NO,        KC_TILD,          KC_LBRC,KC_RBRC,KC_NO,       KC_0,                                    KC_1,        KC_LEFT,    KC_UP  ,KC_RGHT,KC_EQL, KC_BSPC, \
-            KC_NO,        KC_NO,            KC_NO,  KC_NO,  KC_NO,       KC_NO,                                   KC_0,        KC_HOME,    KC_DOWN,KC_END, KC_BSLS,KC_INS,  \
-            KC_NO,                                          KC_NO,       KC_NO,                                   LAYER_2,     KC_NO,                              KC_NO    \
+                          KC_GRV,           KC_LCBR,KC_RCBR,KC_PIPE,     KC_NO,        _______,      _______,     KC_ASTR,     KC_DEL,     KC_SLCK,KC_BSPC,KC_PLUS,         \
+            _______,      KC_TILD,          KC_LBRC,KC_RBRC,KC_NO,       KC_0,                                    KC_1,        KC_LEFT,    KC_UP  ,KC_RGHT,KC_EQL, KC_BSPC, \
+            _______,      KC_NO,            KC_NO,  KC_NO,  KC_NO,       KC_NO,                                   KC_0,        KC_HOME,    KC_DOWN,KC_END, KC_BSLS,KC_INS,  \
+            _______,                                        _______,     _______,                                 LAYER_2,     _______,                            _______  \
     );
 
     /*

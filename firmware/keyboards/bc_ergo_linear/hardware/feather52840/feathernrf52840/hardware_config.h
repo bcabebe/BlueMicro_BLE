@@ -64,11 +64,13 @@ voltage monitor     20  A6  P0.29   .
 /* COL2ROW or ROW2COL */
 #define DIODE_DIRECTION COL2ROW
 
-#define  STATUS_BLE_LED_PIN 4   // blue
-#define  STATUS_KB_LED_PIN  3   // red
+#define  STATUS_BLE_LED_PIN 42  // blue     // a value of 4 doesn't seem to work
+#define  STATUS_KB_LED_PIN  47  // red      // a value of 3 doesn't seem to work
 
 #define BATTERY_TYPE BATT_LIPO
-#define VBAT_PIN  20
+#define VBAT_PIN  29            // i'm not sure a value of 20 works for this
+
+#define TIME_TILL_HOLD 175  // 175 ms, default is 200 ms
 
     
 #endif /* HARDWARE_CONFIG_H */
