@@ -27,10 +27,11 @@ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR P
 #ifndef KEYMAP_H
 #define KEYMAP_H
 
-#define NUM_LAYERS 1
+#define NUM_LAYERS 2
 
-#define _QWERTY 0
-#define _L1  1
+#define _BL 0       // base layer
+#define _NL 1       // number keypad layer
+#define _AL 2       // arrow keys layer
 
 void setupKeymap();
 extern std::array<std::array<Key, MATRIX_COLS>, MATRIX_ROWS> matrix;

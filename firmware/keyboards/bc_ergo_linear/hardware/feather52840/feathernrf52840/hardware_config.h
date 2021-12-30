@@ -28,13 +28,47 @@ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR P
 #define MATRIX_ROWS 5
 #define MATRIX_COLS 14
 
-#define MATRIX_ROW_PINS {9, 10, 11, 12, 13}
-#define MATRIX_COL_PINS {25, 24, 1, 0, 2, 23, 22, 16, 15, 14, 26, 19, 18, 17}
+#define MATRIX_ROW_PINS {25, 24, 1, 22, 23}
+#define MATRIX_COL_PINS {14, 15, 16, 17, 18, 19, 26, 5, 6, 9, 10, 11, 12, 13}
+/*
+P#      dig     labelled    labelled   dig  P#
+-------------------------------------------------------
+P0.12   22      SDA         D2           2  P0.10/NFC2
+P0.11   23      SCL         TX           0  P0.25
+P1.08    5      D5          RX           1  P0.24
+P0.07    6      D6          MISO        24  P0.15
+P0.26    9      D9          MOSI        25  P0.13
+P0.27   10      D10         SCK         26  P0.14
+P0.06   11      D11         A5          19  P0.03
+P0.08   12      D12         A4          18  P0.02
+P1.09   13      D13         A3          17  P0.28
+                USB         A2          16  P0.30
+                EN          A1          15  P0.05
+                VBAT        A0          14  P0.04
+                            gnd         
+                            aref        21  P0.31
+                            3V
+                            reset
 
+https://cdn-blog.adafruit.com/uploads/2021/05/feather-nrf-pins-1536x1152.png
 
+use                 dig ana P#      .
+switch               7      P1.02   .
+red led              3      P1.15   
+blue led             4      P1.10
+neopixel             8      P0.16
+nfc1                33      P0.09
+voltage monitor     20  A6  P0.29   .
+*/
 
 /* COL2ROW or ROW2COL */
 #define DIODE_DIRECTION COL2ROW
+
+#define  STATUS_BLE_LED_PIN 4   // blue
+#define  STATUS_KB_LED_PIN  3   // red
+
+#define BATTERY_TYPE BATT_LIPO
+#define VBAT_PIN  20
 
     
 #endif /* HARDWARE_CONFIG_H */

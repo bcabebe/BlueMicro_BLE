@@ -21,26 +21,26 @@ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR P
 #define KEYBOARD_CONFIG_H
 #include "hardware_config.h"
 
-#define DEVICE_NAME_M "Megatreus" /**< Name of device. Will be included in the advertising data. */
-#define DEVICE_MODEL "Megatreus - The Original" /**< Name of device. Will be included in the advertising data. */
-#define MANUFACTURER_NAME "jturcotte" /**< Manufacturer. Will be passed to Device Information Service. */
+#define DEVICE_NAME_M "BC Ergo Linear" /**< Name of device. Will be included in the advertising data. */
+#define DEVICE_MODEL "BC Ergo Linear" /**< Name of device. Will be included in the advertising data. */
+#define MANUFACTURER_NAME "Brian Cabebe" /**< Manufacturer. Will be passed to Device Information Service. */
 
 #define KEYBOARD_SIDE SINGLE
 
 
 #define KEYMAP( \
-    A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, A13, A14, \
-    B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, \
-    C1, C2, C3, C4, C5, C6, D7, D8, C9, C10, C11, C12, C13, C14, \
-    D1, D2, D3, D4, D5, D6,         D9, D10, D11, D12, D13, D14, \
-    E1, E2,     E4, E5, E6,             E10, E11, E12, E13, E14, \
-                                                  F12 \
-) { \
-    {A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, A13, A14}, \
-    {B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14}, \
-    {C1, C2, C3, C4, C5, C6, KC_NO, KC_NO, C9, C10, C11, C12, C13, C14}, \
-    {D1, D2, D3, D4, D5, D6, D7, D8, D9, D10, D11, D12, D13, D14}, \
-    {E1, E2, KC_NO, E4, E5, E6, KC_NO, KC_NO, E10, E11, F12, E12, E13, E14} \
+         kB1, kC1, kD1, kE1, kF1,           kI1, kJ1, kK1, kL1, kM1,      \
+         kB2, kC2, kD2, kE2, kF2, kG2, kH2, kI2, kJ2, kK2, kL2, kM2,      \
+    kA3, kB3, kC3, kD3, kE3, kF3,           kI3, kJ3, kK3, kL3, kM3, kN3, \
+    kA4, kB4, kC4, kD4, kE4, kF4,           kI4, kJ4, kK4, kL4, kM4, kN4, \
+    kA5,                kE5, kF5,           kI5, kJ5,                kN5  \
+) \
+{ \
+    { KC_NO, kB1,   kC1,   kD1,   kE1, kF1, KC_NO, KC_NO, kI1, kJ1, kK1,   kL1,   kM1,   KC_NO }, \
+    { KC_NO, kB2,   kC2,   kD2,   kE2, kF2, kG2,   kH2,   kI2, kJ2, kK2,   kL2,   kM2,   KC_NO }, \
+    { kA3,   kB3,   kC3,   kD3,   kE3, kF3, KC_NO, KC_NO, kI3, kJ3, kK3,   kL3,   kM3,   kN3   }, \
+    { kA4,   kB4,   kC4,   kD4,   kE4, kF4, KC_NO, KC_NO, kI4, kJ4, kK4,   kL4,   kM4,   kN4   }, \
+    { kA5,   KC_NO, KC_NO, KC_NO, kE5, kF5, KC_NO, KC_NO, kI5, kJ5, KC_NO, KC_NO, KC_NO, kN5   }  \
 }
 
 #endif /* KEYBOARD_CONFIG_H */
