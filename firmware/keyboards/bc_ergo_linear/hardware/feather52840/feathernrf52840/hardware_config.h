@@ -70,7 +70,8 @@ voltage monitor     20  A6  P0.29   .
 #define BATTERY_TYPE BATT_LIPO
 #define VBAT_PIN  PIN_VBAT              // i'm not sure a value of 20 works for this, neither does a value os 29
 
-#define TIME_TILL_HOLD 175              // 175 ms, default is 200 ms
+//#define TIME_TILL_HOLD 175              // 175 ms, default is 200 ms
+#define TIME_TILL_HOLD 100              // 175 ms, default is 200 ms
 
     
 #endif /* HARDWARE_CONFIG_H */

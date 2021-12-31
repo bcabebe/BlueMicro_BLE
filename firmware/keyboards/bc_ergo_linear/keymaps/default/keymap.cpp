@@ -107,7 +107,7 @@ void setupKeymap() {
         //                       ,------.                                          ,------.
         //                ,------|  F3  |-------------.              .-------------| PgDn |------.              
         //         ,------+  F12 +------+      |      |              |      | PgUp +------+ Pause+------.       
-        //         |  F11 +------+   }  +------+------|              |------+------+ SLck +------+ PrtSc|       
+        //         |  F11 +------+   }  +------+------|              |------+------+      +------+ PrtSc|       
         //  ,------+------+  {   +------+   |  |      |              |   *  |  Del +------+ Bksp +------+------.
         //  |      |   `  +------+   ]  +------+------|              |------+------+  Up  +------+   +  | Bksp |
         //  |------+------+  [   +------+      |  0   |              |   1  |  <-  +------+  ->  +------+------|
@@ -120,7 +120,7 @@ void setupKeymap() {
         //                              |      |      |      ||      |  LY2 |      |
         //                              `--------------------'`--------------------'
                           KC_F11,           KC_F12, KC_F3,  KC_NO,       KC_NO,                                   KC_NO,       KC_PGUP,    KC_PGDN,KC_PAUS,KC_PSCR,         \
-                          KC_GRV,           KC_LCBR,KC_RCBR,KC_PIPE,     KC_NO,        _______,      _______,     KC_ASTR,     KC_DEL,     KC_SLCK,KC_BSPC,KC_PLUS,         \
+                          KC_GRV,           KC_LCBR,KC_RCBR,KC_PIPE,     KC_NO,        _______,      _______,     KC_ASTR,     KC_DEL,     KC_NO,  KC_BSPC,KC_PLUS,         \
             _______,      KC_TILD,          KC_LBRC,KC_RBRC,KC_NO,       KC_0,                                    KC_1,        KC_LEFT,    KC_UP  ,KC_RGHT,KC_EQL, KC_BSPC, \
             _______,      KC_NO,            KC_NO,  KC_NO,  KC_NO,       KC_NO,                                   KC_0,        KC_HOME,    KC_DOWN,KC_END, KC_BSLS,KC_INS,  \
             _______,                                        _______,     _______,                                 LAYER_2,     _______,                            _______  \
