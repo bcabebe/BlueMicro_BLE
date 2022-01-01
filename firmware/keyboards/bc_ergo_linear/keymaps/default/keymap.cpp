@@ -122,7 +122,7 @@ void setupKeymap() {
                           KC_F11,           KC_F12, KC_F3,  KC_NO,       KC_NO,                                   KC_NO,       KC_PGUP,    KC_PGDN,KC_PAUS,KC_PSCR,         \
                           KC_GRV,           KC_LCBR,KC_RCBR,KC_PIPE,     KC_NO,        _______,      _______,     KC_ASTR,     KC_DEL,     KC_NO,  KC_BSPC,KC_PLUS,         \
             _______,      KC_TILD,          KC_LBRC,KC_RBRC,KC_NO,       KC_0,                                    KC_1,        KC_LEFT,    KC_UP  ,KC_RGHT,KC_EQL, KC_BSPC, \
-            _______,      KC_NO,            KC_NO,  KC_NO,  KC_NO,       KC_NO,                                   KC_0,        KC_HOME,    KC_DOWN,KC_END, KC_BSLS,KC_INS,  \
+            _______,     PRINT_BATTERY,PRINT_BLE,PRINT_INFO,KC_NO,       KC_NO,                                   KC_0,        KC_HOME,    KC_DOWN,KC_END, KC_BSLS,KC_INS,  \
             _______,                                        _______,     _______,                                 LAYER_2,     _______,                            _______  \
     );
 
@@ -136,7 +136,11 @@ void setupKeymap() {
             matrix[row][col].addActivation(_BL, Method::MT_TAP, base_tap[row][col]);
             matrix[row][col].addActivation(_BL, Method::MT_HOLD, base_hold[row][col]);
             matrix[row][col].addActivation(_NL, Method::PRESS, layer1[row][col]);
+            matrix[row][col].addActivation(_NL, Method::MT_TAP, base_tap[row][col]);
+            matrix[row][col].addActivation(_NL, Method::MT_HOLD, base_hold[row][col]);
             matrix[row][col].addActivation(_AL, Method::PRESS, layer2[row][col]);
+            matrix[row][col].addActivation(_AL, Method::MT_TAP, base_tap[row][col]);
+            matrix[row][col].addActivation(_AL, Method::MT_HOLD, base_hold[row][col]);
         }
     }
 
